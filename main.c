@@ -1,34 +1,101 @@
 #include <stdio.h>
 #include <string.h>
-
-void cleanr_entry() {
-  char c;
-  while ((c = getchar()) != '\n' && c != EOF) {} 
+void clean_entry() {
+    char c;
+while ((c = getchar()) != '\n' && c != EOF) {} }
+void read_text(char *buffer, int length) {
+    fgets(buffer, length, stdin);
+    strtok(buffer, "\n");
 }
+int main()
+{
+    double salario1, salario2;
+    char nome1[50], nome2[50];
+    int idade;
+    char sexo;
+printf("Nome da primeira pessoa: ");
+read_text(nome1, 50);
+printf("Salario da primeira pessoa: ");
+scanf("%lf", &salario1);
 
-int main() {
+printf("Nome da segunda pessoa: "); 
+clean_entry();
+read_text(nome2, 50);
+printf("Salario da segunda pessoa: "); 
+scanf("%lf", &salario2);
+
+printf("Digite uma idade: "); 
+scanf("%d", &idade); 
+printf("Digite um sexo (F/M): "); 
+clean_entry();
+scanf("%c", &sexo);
+
+printf("Nome 1: %s\n", nome1); 
+printf("Salario 1: %.2lf\n", salario1); 
+printf("Nome 2: %s\n", nome2); 
+printf("Salario 2: %.2lf\n", salario2); 
+printf("Idade: %d\n", idade); 
+printf("Sexo: %c\n", sexo);
+
+return 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+// _ _ _ _ _ _ //
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// void clean_entry() {
+//   char c;
+//   while ((c = getchar()) != '\n' && c != EOF) {} 
+// }
+
+// void read_text(char *buffer, int length) { fgets(buffer, length, stdin); strtok(buffer, "\n");
+// }
+
+// int main() {
   
-  int age;
-  double income, height;
-  char gender;
-  char name[50]; 
+//   int age1, age2;
+//   char name1[50], name2[50]; 
 
-  printf("Please, type your age: ");
-  scanf("%d", &age);
-  printf("Please, type your income: ");
-  scanf("%lf", &income);
-  printf("Please, type your height: ");
-  scanf("%lf", &height);
-  printf("Please, type your name: ");
-  fgets(name, 50, stdin); // entrada padrao no console
+//   printf("Please, type your age: ");
+//   scanf("%d", &age1);
+//   printf("Please, type your name: ");
+//   clean_entry(); // Função criada pra limpeza de linha.
+//   read_text(name1, 50); // Função para ler texto
 
-  printf("AGE = %d\n", age);
-  printf("INCOME = %.21f\n", income);
-  printf("HEIGHT = %.21f\n", height);
-  printf("NAME = %s\n", name);
+//   printf("Please, type your age: ");
+//   scanf("%d", &age2);
+//   printf("Please, type your name: ");
+//   clean_entry();
+//   read_text(name2, 50);
 
-  return 0;
-}
+//   printf("AGE1 = %d\n", age1);
+//   printf("NAME1 = %s\n", name1);
+//   printf("AGE2 = %d\n", age2);
+//   printf("NAME2 = %s\n", name2);
+
+//   return 0;
+// }
+
+
+
+
+
+
+
 
 
 // _ _ _ _ _ _ _ _ //
