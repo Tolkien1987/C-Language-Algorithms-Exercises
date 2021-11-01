@@ -1,21 +1,56 @@
 #include <stdio.h>
 #include <string.h>
 
+void cleanr_entry() {
+  char c;
+  while ((c = getchar()) != '\n' && c != EOF) {} 
+}
 
 int main() {
   
-  int a, b , resultado;
-  a = 5;
-  b = 2;
-  resultado = a / b;
-  printf("%d\n", resultado);
+  int age;
+  double income, height;
+  char gender;
+  char name[50]; 
+
+  printf("Please, type your age: ");
+  scanf("%d", &age);
+  printf("Please, type your income: ");
+  scanf("%lf", &income);
+  printf("Please, type your height: ");
+  scanf("%lf", &height);
+  printf("Please, type your name: ");
+  fgets(name, 50, stdin); // entrada padrao no console
+
+  printf("AGE = %d\n", age);
+  printf("INCOME = %.21f\n", income);
+  printf("HEIGHT = %.21f\n", height);
+  printf("NAME = %s\n", name);
 
   return 0;
 }
 
 
+// _ _ _ _ _ _ _ _ //
+
+// #include <stdio.h>
+// #include <string.h>
 
 
+// int main() {
+  
+//   double a;
+//   int b;
+//   a = 5.9;
+//   b = a;
+//   printf("%d\n", b);
+
+//   return 0;
+// }
+
+
+
+// _ _ _ _ _ _ _ //
 
 
 
