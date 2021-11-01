@@ -1,7 +1,14 @@
-# C
+# This is my C Language exercises
 
-This is the Template Repl for C.
+Repo for my learning from Udemy courses with C programming language on weekends
+
+You can find this course here: 
+
+https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/
+
+_ _ _ _ _ _ _ _ _ _
 
 C is a low-level and cross-platform imperative language. It was created in 1972 and many other languages have been influenced by it.
 
-[While there isn't "official" C documentation, check out Microsoft's resources here](https://docs.microsoft.com/en-us/cpp/c-language).
+C Language official docs (https://docs.microsoft.com/en-us/cpp/c-language).
+
