@@ -1,5 +1,7 @@
 # This is my C Language exercises
 
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/6H3JSZy/C-Programming-online-training-nareshit.jpg" alt="C-Programming-online-training-nareshit" border="0"></a>
+
 Repo for my learning from Udemy courses with C programming language on weekends
 
 You can find this course here: 
