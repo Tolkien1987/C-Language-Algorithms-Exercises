@@ -1,13 +1,23 @@
+// Tipo Placeholder de formatação
+// *int = (inteiro 16 bits) %d ou %i
+// long int = (inteiro 32 bits) %li
+// long long int = (inteiro 64 bits) %lli
+// *float = (real precisão simples) %f
+// *double = (real precisão dupla) %lf
+// *char = (um único caractere) %c
+// *char[ ] = (texto) %s 
+// */n = quebra de linha
+
 #include <stdio.h>
 #include <string.h>
 
 int main() {
 
-  int x, y;
-  x = 10;
-  y = 20;
+  double x, y;
+  x = 1.650;
+  y = 2.4056;
 
-  printf("%d", x + y);
+  printf("%.2lf", x + y);
 
 
  return 0;
