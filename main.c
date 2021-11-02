@@ -2,22 +2,41 @@
 #include <string.h>
 
 int main() {
-  
-  int x, soma;
 
-  soma = 0;
-  printf("Digite o primeiro numero: ");
-  scanf("%d", &x);
+  int x, y;
+  x = 10;
+  y = 20;
 
-  while (x != 0) {
-    soma = soma + x;
-    printf("Digite o outro numero: ");
-    scanf("%d", &x);
-  }
-  printf("SOMA = %d\n", soma);
-  
-  return 0;
+  printf("%d", x + y);
+
+
+ return 0;
 }
+
+
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+  
+//   int x, soma;
+
+//   soma = 0;
+//   printf("Digite o primeiro numero: ");
+//   scanf("%d", &x);
+
+//   while (x != 0) {
+//     soma = soma + x;
+//     printf("Digite o outro numero: ");
+//     scanf("%d", &x);
+//   }
+//   printf("SOMA = %d\n", soma);
+  
+//   return 0;
+// }
 
 
 
@@ -43,8 +62,6 @@ int main() {
 
 //   return 0;
 // }
-
-
 
 
 
@@ -93,13 +110,6 @@ int main() {
 // printf("Sexo: %c\n", sexo);
 
 // return 0; }
-
-
-
-
-
-
-
 
 
 
@@ -172,7 +182,9 @@ int main() {
 
 
 
+
 // _ _ _ _ _ _ _ //
+
 
 
 
@@ -185,6 +197,11 @@ int main() {
 // char = (um único caractere) %c
 // char[ ] = (texto) %s 
 // /n = quebra de linha
+
+
+
+
+// _ _ _ _ _ _  //
 
 
 
