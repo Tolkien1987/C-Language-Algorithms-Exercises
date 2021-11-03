@@ -14,19 +14,28 @@
 #include <stdio.h>
 #include <string.h>
 
+void clean_entry() {
+  char c;
+  while ((c = getchar ()) != '\n'&& c != EOF) {}
+}
+
 int main() {
 
   
-  double b1, b2, h, area ;
-  b1 = 5;
-  b2 = 8;
-  h = 4;
+  int age;
+  double income, height;
+  char gender;
+  char name[50];
 
-  area = (b1 + b2) / 2.0 * h;
+  printf("Type your age: ");
+  scanf("%d", &age);
+  printf("Type your name: ");
+  clean_entry();
+  fgets(name, 50, stdin);
+
   
-  printf("%.lf\n", area);
-
-
+  printf("Age = %d\n", age);
+  printf("Name = %s\n", name);
  return 0;
 }
 
