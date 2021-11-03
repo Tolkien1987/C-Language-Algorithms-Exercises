@@ -10,7 +10,13 @@ https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/
 
 _ _ _ _ _ _ _ _ _ _
 
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/cgPQYcK/dennis-ritchie-e1522689274527.jpg" alt="dennis-ritchie-e1522689274527" border="0"></a>
+
+The founder of “C” programming language – Dennis Ritchie
+
 C is a low-level and cross-platform imperative language. It was created in 1972 and many other languages have been influenced by it.
 
 C Language official docs (https://docs.microsoft.com/en-us/cpp/c-language).
+
+
 
