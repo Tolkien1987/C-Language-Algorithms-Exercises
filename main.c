@@ -6,18 +6,25 @@
 // *double = (real precisão dupla) %lf
 // *char = (um único caractere) %c
 // *char[ ] = (texto) %s 
-// */n = quebra de linha
+// */n = quebra de 
+
+//scanf = ler dados de tipos basicos
+//fgets = ler texto até quebra de linha
 
 #include <stdio.h>
 #include <string.h>
 
 int main() {
 
-  double x, y;
-  x = 1.650;
-  y = 2.4056;
+  
+  double b1, b2, h, area ;
+  b1 = 5;
+  b2 = 8;
+  h = 4;
 
-  printf("%.2lf", x + y);
+  area = (b1 + b2) / 2.0 * h;
+  
+  printf("%.lf\n", area);
 
 
  return 0;
