@@ -16,7 +16,9 @@
 // _ _ _ _ Exercises _ _ _ //
 
 
-// 001 - Problema "notas" - Fazer um programa para ler as duas notas que um aluno obteve no primeiro e segundo semestres de uma disciplina anual. Em seguida, mostrar a nota final que o aluno obteve (com uma casa decimal) no ano juntamente com um texto explicativo. Caso a nota final do aluno seja inferior a 60.00, mostrar a mensagem "REPROVADO"
+// 002 - Problema "baskara"
+// Fazer um programa para ler os três coeficientes de uma equação do segundo grau. Usando a fórmula de Baskara, calcular e mostrar os valores das raízes x1 e x2 da equação com quatro casas decimais, conforme exemplo. Se a equação não possuir raízes reais, mostrar uma mensagem.
+
 
 #include <stdio.h>
 #include <string.h>
@@ -24,25 +26,64 @@
 
 int main() {
 
-  double grade1, grade2, finalGrade;
-  printf("Type the first grade: ");
-  scanf("%lf", &grade1);
+  double a, b, c, delta, x1, x2;
 
-  printf("Type the second grade: ");
-  scanf("%lf", &grade2);
+  printf("Coeficiente a: ");
+  scanf("%lf", &a);
+  printf("Coeficiente b: ");
+  scanf("%lf", &b);
+  printf("Coeficiente c: ");
+  scanf("%lf", &c);
 
-  finalGrade = (grade1 + grade2) / 2;
-  printf("Final grade = %.1lf\n", finalGrade);
-  
-  if (finalGrade < 60.0) {
-    printf("You are reproved!");
+  delta = b * b - 4 * a * c;
+
+  if (a == 0 || delta < 0) {
+    printf("Esta equação não possui raizes reais");
   } else {
-    printf("You're approved, congratulations!");
-  }
-
+    x1 = (-b + sqrt(delta)) / (2 * a); 
+    x2 = (-b - sqrt(delta)) / (2 * a);
+    printf("X1 = %.4lf\n", x1);
+    printf("X2 = %.4lf\n", x2);
+  } 
 
   return 0;
 }
+
+
+
+
+// _ _ _ _ _ _ //
+
+
+
+
+
+// 001 - Problema "notas" - Fazer um programa para ler as duas notas que um aluno obteve no primeiro e segundo semestres de uma disciplina anual. Em seguida, mostrar a nota final que o aluno obteve (com uma casa decimal) no ano juntamente com um texto explicativo. Caso a nota final do aluno seja inferior a 60.00, mostrar a mensagem "REPROVADO"
+
+// #include <stdio.h>
+// #include <string.h>
+// #include <math.h>
+
+// int main() {
+
+//   double grade1, grade2, finalGrade;
+//   printf("Type the first grade: ");
+//   scanf("%lf", &grade1);
+
+//   printf("Type the second grade: ");
+//   scanf("%lf", &grade2);
+
+//   finalGrade = (grade1 + grade2) / 2;
+//   printf("Final grade = %.1lf\n", finalGrade);
+  
+//   if (finalGrade < 60.0) {
+//     printf("You are reproved!");
+//   } else {
+//     printf("You're approved, congratulations!");
+//   }
+
+//   return 0;
+// }
 
 
 
@@ -82,7 +123,6 @@ int main() {
 //   mediumAge = (age1 + age2) / 2.0;
 //   printf("The average beetwen %s and %s is: %.1lf ages", name1, name2, mediumAge);
 
-
 //   return 0;
 // }
 
@@ -120,7 +160,6 @@ int main() {
 //   printf("Area = %.4lf\n", area);
 //   printf("Perimeter = %.4lf\n", perimeter);
 //   printf("Diagonal = %.4lf\n", diagonal);
-
 
 //   return 0;
 // }
