@@ -16,35 +16,133 @@
 // _ _ _ _ Exercises _ _ _ //
 
 
-// 1 - Problema "terreno"
-// Fazer um programa para ler as medidas da largura e comprimento de um terreno retangular com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais. Em seguida, o programa deve mostrar o valor da área do terreno, bem como o valor do preço do terreno, ambos com duas casas decimais.
+// 04 - Problema "soma"
+// Fazer um programa para ler dois valores inteiros X e Y, e depois mostrar na tela o valor da soma destes números.
 
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 int main() {
 
-  double width, height, value, area, price;
-
-  printf("Type the width value :");
-  scanf("%lf", &width);
-  printf("Type the height value :");
-  scanf("%lf", &height);
-  printf("Type the cost value :");
-  scanf("%lf", &value);
-
-  area = width * height;
-  price = area * value;
-
-  printf("The total value is = %.2lf\n", area);
- printf("The price value is = %.2lf\n", price);
-
-
-
   
+
 
   return 0;
 }
+
+
+
+
+
+// _ _ _ _ _ __ //
+
+
+
+
+// 03 - Problema "idades"
+// Fazer um programa para ler o nome e idade de duas pessoas. Ao final mostrar uma mensagem com os nomes e a idade média entre essas pessoas, com uma casa decimal, conforme exemplo.
+
+// #include <stdio.h>
+// #include <string.h>
+// #include <math.h>
+
+// int main() {
+
+//   char name1[50], name2[50];
+//   int age1, age2;
+//   double mediumAge; 
+
+//   printf("First person data: \n");
+//   printf("Name: ");
+//   gets(name1);
+//   printf("Age: ");
+//   scanf("%d", &age1);
+
+//   printf("Second person data: \n");
+//   printf("Name: ");
+//   fseek(stdin, 0, SEEK_END);
+//   gets(name2);
+//   printf("Age: ");
+//   scanf("%d", &age2);
+
+//   mediumAge = (age1 + age2) / 2.0;
+//   printf("The average beetwen %s and %s is: %.1lf ages", name1, name2, mediumAge);
+
+
+//   return 0;
+// }
+
+
+
+
+
+
+// _ _ _ _ _ _ _ //
+
+
+
+
+// 02 - Problema "retangulo"
+// Fazer um programa para ler as medidas da base e altura de um retângulo. Em seguida, mostrar o valor da área, perímetro e diagonal deste retângulo, com quatro casas decimais, conforme exemplos.
+
+
+// #include <stdio.h>
+// #include <string.h>
+// #include <math.h>
+
+// int main() {
+
+//   double base, height, area, perimeter, diagonal;
+
+//   printf("Please, type the base value: ");
+//   scanf("%lf", &base);
+//   printf("Please type the height value: ");
+//   scanf("%lf", &height);
+
+//   area = base * height;
+//   perimeter = 2 * (base + height);
+//   diagonal = sqrt (pow(base , 2.0) + pow (height , 2.0));
+
+//   printf("Area = %.4lf\n", area);
+//   printf("Perimeter = %.4lf\n", perimeter);
+//   printf("Diagonal = %.4lf\n", diagonal);
+
+
+//   return 0;
+// }
+
+
+
+// _ _ _ _ _ _ __ //
+
+
+
+// 01 - Problema "terreno"
+// Fazer um programa para ler as medidas da largura e comprimento de um terreno retangular com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais. Em seguida, o programa deve mostrar o valor da área do terreno, bem como o valor do preço do terreno, ambos com duas casas decimais.
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+
+//   double width, height, value, area, price;
+
+//   printf("Type the width value :");
+//   scanf("%lf", &width);
+//   printf("Type the height value :");
+//   scanf("%lf", &height);
+//   printf("Type the cost value :");
+//   scanf("%lf", &value);
+
+//   area = width * height;
+//   price = area * value;
+
+//   printf("The total value is = %.2lf\n", area);
+//  printf("The price value is = %.2lf\n", price);
+
+//   return 0;
+// }
 
 
 
