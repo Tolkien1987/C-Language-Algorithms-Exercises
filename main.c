@@ -16,38 +16,78 @@
 // _ _ _ _ Exercises _ _ _ //
 
 
+
+// 003 - Problema "menor_de_tres"
+// Fazer um programa para ler três números inteiros. Em seguida, mostrar qual o menor dentre os três números lidos. 
+// Em caso de empate, mostrar apenas uma vez.
+
+#include <stdio.h>
+
+int main () {
+
+    int a, b, c, lower;
+
+    printf("First value: ");
+    scanf("%d", &a);
+    printf("Second value: ");
+    scanf("%d", &b);
+    printf("Third value: ");
+    scanf("%d", &c);
+
+
+    if (a < b && a < c) {
+        lower = a;
+    } else if (b < c) {
+        lower = b;
+    } else {
+        lower = c;
+    }
+
+    printf("Lower = %d\n", lower);
+
+    return 0;
+}
+
+
+
+
+// _ _ _ _ _ //
+
+
+
+
 // 002 - Problema "baskara"
 // Fazer um programa para ler os três coeficientes de uma equação do segundo grau. Usando a fórmula de Baskara, calcular e mostrar os valores das raízes x1 e x2 da equação com quatro casas decimais, conforme exemplo. Se a equação não possuir raízes reais, mostrar uma mensagem.
 
 
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
+// #include <stdio.h>
+// #include <string.h>
+// #include <math.h>
 
-int main() {
+// int main() {
 
-  double a, b, c, delta, x1, x2;
+//   double a, b, c, delta, x1, x2;
 
-  printf("Coeficiente a: ");
-  scanf("%lf", &a);
-  printf("Coeficiente b: ");
-  scanf("%lf", &b);
-  printf("Coeficiente c: ");
-  scanf("%lf", &c);
+//   printf("Coeficiente a: ");
+//   scanf("%lf", &a);
+//   printf("Coeficiente b: ");
+//   scanf("%lf", &b);
+//   printf("Coeficiente c: ");
+//   scanf("%lf", &c);
 
-  delta = b * b - 4 * a * c;
+//   delta = b * b - 4 * a * c;
 
-  if (a == 0 || delta < 0) {
-    printf("Esta equação não possui raizes reais");
-  } else {
-    x1 = (-b + sqrt(delta)) / (2 * a); 
-    x2 = (-b - sqrt(delta)) / (2 * a);
-    printf("X1 = %.4lf\n", x1);
-    printf("X2 = %.4lf\n", x2);
-  } 
+//   if (a == 0 || delta < 0) {
+//     printf("Esta equação não possui raizes reais");
+//   } else {
+//     x1 = (-b + sqrt(delta)) / (2 * a); 
+//     x2 = (-b - sqrt(delta)) / (2 * a);
+//     printf("X1 = %.4lf\n", x1);
+//     printf("X2 = %.4lf\n", x2);
+//   } 
 
-  return 0;
-}
+//   return 0;
+// }
 
 
 
