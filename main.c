@@ -11,35 +11,159 @@
 //scanf = ler dados de tipos basicos
 //fgets = ler texto até quebra de linha
 
-// for = (início; condição; incremento)
+// for = (início; condição; incremento) 
+
+// _ _ _ _ Exercises _ _ _ //
+
+
+// 1 - Problema "terreno"
+// Fazer um programa para ler as medidas da largura e comprimento de um terreno retangular com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais. Em seguida, o programa deve mostrar o valor da área do terreno, bem como o valor do preço do terreno, ambos com duas casas decimais.
 
 #include <stdio.h>
 #include <string.h>
 
-void clean_entry() {
-   char c;
-   while ((c = getchar ()) != '\n'&& c != EOF) {}
-}
-
 int main() {
 
-  double C, F;
-  char answ;
+  double width, height, value, area, price;
+
+  printf("Type the width value :");
+  scanf("%lf", &width);
+  printf("Type the height value :");
+  scanf("%lf", &height);
+  printf("Type the cost value :");
+  scanf("%lf", &value);
+
+  area = width * height;
+  price = area * value;
+
+  printf("The total value is = %.2lf\n", area);
+ printf("The price value is = %.2lf\n", price);
+
+
+
   
-  do {
-    printf("Type the Celsius temp. : ");
-    scanf("%lf", &C);
-    F = 9.0 * C / 5.0 + 32.0;
-    printf("Equal to Fahrenheit: %.11lf\n", F);
-    printf("Do you want to repeat (y/n) ?");
-    clean_entry();
-    scanf("%c", &answ);
-  } while (answ == 'y');
 
   return 0;
 }
 
 
+
+
+
+
+
+
+
+// _ _ _ _Others studies _ _ __ //
+
+
+
+
+
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+
+//   int M, N, i, j;
+
+//   printf("how many lines? ");
+//   scanf("%d", &M);
+//   printf("How many Columns? ");
+//   scanf("%d", &N);
+
+//   int mat [M] [N];
+
+//   for (i = 0; i < M; i++) {
+//     for (j = 0; j < N; j++) {
+//       printf("Element [%d, %d]: ", i, j);
+//       scanf("%d", &mat [i] [j]);
+//     }
+//   } 
+
+//   printf("\nTyped Mat: \n");
+//   for (i = 0; i < M; i++) {
+//     for (j = 0; j < N; j++) {
+//       printf("%d", mat [i] [j]);
+//     }
+//     printf("\n");
+//   }
+
+//   return 0;
+// }
+
+
+
+
+
+
+
+// _ _ _ _ _ _ _ //
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+
+//   int N, i;
+
+//   printf("How many numbers you will type in? ");
+//   scanf("%d", &N);
+
+//   double vet[N];
+
+//   for (i = 0; i < N; i++) {
+//     printf("Type you number: ");
+//     scanf("%lf", &vet[i]);
+//   }
+
+//   printf("\nTyped Numbers: \n");
+//   for (i = 0; i < N; i++) {
+//     printf("%.11lf\n", vet[i]);
+//   }
+
+//   return 0;
+// }
+
+
+
+
+
+// _ _ _ _ _ _ //
+
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// void clean_entry() {
+//    char c;
+//    while ((c = getchar ()) != '\n'&& c != EOF) {}
+// }
+
+// int main() {
+
+//   double C, F;
+//   char answ;
+  
+//   do {
+//     printf("Type the Celsius temp. : ");
+//     scanf("%lf", &C);
+//     F = 9.0 * C / 5.0 + 32.0;
+//     printf("Equal to Fahrenheit: %.11lf\n", F);
+//     printf("Do you want to repeat (y/n) ?");
+//     clean_entry();
+//     scanf("%c", &answ);
+//   } while (answ == 'y');
+
+//   return 0;
+// }
 
 
 
