@@ -11,33 +11,81 @@
 //scanf = ler dados de tipos basicos
 //fgets = ler texto até quebra de linha
 
+// for = (início; condição; incremento)
+
 #include <stdio.h>
 #include <string.h>
 
 void clean_entry() {
-  char c;
-  while ((c = getchar ()) != '\n'&& c != EOF) {}
+   char c;
+   while ((c = getchar ()) != '\n'&& c != EOF) {}
 }
 
 int main() {
 
+  double C, F;
+  char answ;
   
-  int age;
-  double income, height;
-  char gender;
-  char name[50];
+  do {
+    printf("Type the Celsius temp. : ");
+    scanf("%lf", &C);
+    F = 9.0 * C / 5.0 + 32.0;
+    printf("Equal to Fahrenheit: %.11lf\n", F);
+    printf("Do you want to repeat (y/n) ?");
+    clean_entry();
+    scanf("%c", &answ);
+  } while (answ == 'y');
 
-  printf("Type your age: ");
-  scanf("%d", &age);
-  printf("Type your name: ");
-  clean_entry();
-  fgets(name, 50, stdin);
-
-  
-  printf("Age = %d\n", age);
-  printf("Name = %s\n", name);
- return 0;
+  return 0;
 }
+
+
+
+
+
+
+
+
+
+
+// _ _ _ _ _ _ //
+
+
+
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// void clean_entry() {
+//   char c;
+//   while ((c = getchar ()) != '\n'&& c != EOF) {}
+// }
+
+// int main() {
+
+  
+//   int age;
+//   double income, height;
+//   char gender;
+//   char name[50];
+
+//   printf("Type your age: ");
+//   scanf("%d", &age);
+//   printf("Type your name: ");
+//   clean_entry();
+//   fgets(name, 50, stdin);
+
+  
+//   printf("Age = %d\n", age);
+//   printf("Name = %s\n", name);
+//  return 0;
+// }
+
+
+
+// _ _ _ _ _ _ //
 
 
 
