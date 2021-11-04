@@ -16,8 +16,7 @@
 // _ _ _ _ Exercises _ _ _ //
 
 
-// 04 - Problema "soma"
-// Fazer um programa para ler dois valores inteiros X e Y, e depois mostrar na tela o valor da soma destes números.
+// 001 - Problema "notas" - Fazer um programa para ler as duas notas que um aluno obteve no primeiro e segundo semestres de uma disciplina anual. Em seguida, mostrar a nota final que o aluno obteve (com uma casa decimal) no ano juntamente com um texto explicativo. Caso a nota final do aluno seja inferior a 60.00, mostrar a mensagem "REPROVADO"
 
 #include <stdio.h>
 #include <string.h>
@@ -25,7 +24,21 @@
 
 int main() {
 
+  double grade1, grade2, finalGrade;
+  printf("Type the first grade: ");
+  scanf("%lf", &grade1);
+
+  printf("Type the second grade: ");
+  scanf("%lf", &grade2);
+
+  finalGrade = (grade1 + grade2) / 2;
+  printf("Final grade = %.1lf\n", finalGrade);
   
+  if (finalGrade < 60.0) {
+    printf("You are reproved!");
+  } else {
+    printf("You're approved, congratulations!");
+  }
 
 
   return 0;
