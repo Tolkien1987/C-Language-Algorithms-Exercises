@@ -16,42 +16,67 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
-// 009 - Problema "soma_vetor"
-// Faça um programa que leia N números reais e armazene-os em um vetor. Em seguida: - Imprimir todos os elementos do vetor
-// - Mostrar na tela a soma e a média dos elementos do vetor
+// 010 - Problema "alturas"   [HARDER]
+// Fazer um programa para ler nome, idade e altura de N pessoas, conforme exemplo. Depois, mostrar na tela a altura média das pessoas, e mostrar também a porcentagem de pessoas com menos de 16 anos, bem como os nomes dessas pessoas caso houver.
+
 
 #include <stdio.h>
+#include <string.h>
+
+void clean_entry() {
+    char c;
+    while ((c = getchar()) != '\n' && c != EOF) {}
+}
+
+void read_text(char *buffer, int length) {
+    fgets(buffer, length, stdin);
+    strtok(buffer, "\n");    
+}
 
 int main () {
 
-  int N;
-  double sum, average;
+  int N, minorN;
+  double sum, average, percentMinor;
 
-  printf("how manu numbers you will type?");
+  printf ("how many people will be count?");
   scanf("%d", &N);
 
-  double vet[N];
+  char names [N][50]; // Criando vetor de N posicoes, e qty de texto de (50)
+  int ages [N];
+  double height [N];
 
-  for (int i = 0; i < N; i++ ) {
-    printf("Type a number: ");
-    scanf("%lf", &vet[i]);
-  }
-
-  printf("\n Valores: ");
   for (int i = 0; i < N; i++) {
-    printf("%.1lf ", vet[i]);
+    printf("Data from %da person :\n", i + 1);
+    printf("Name: ");
+    clean_entry();
+    read_text(names[i], 50);
+    printf("Age: ");
+    scanf("%d", &ages[i]);
+    printf("Height: ");
+    scanf("%lf", &height[i]);
   }
-  printf("\n");
 
   sum = 0;
   for (int i = 0; i < N; i++) {
-    sum = sum + vet[i];
+    sum = sum + height[i];
   }
-  printf("Sum is equal to = %.2lf\n", sum);
-
   average = sum / N;
-  printf("Average = %.2lf\n", average);
- 
+  printf("Average height: %.2lf\n", average);
+
+  minorN = 0;
+  for (int i = 0; i < N; i++) {
+    if (ages[i] < 16) {
+      minorN = minorN + 1;
+    }
+  }
+  percentMinor = minorN * 100.0 / N;
+  printf("Peoples with less than 16 years old: %.1lf %%\n", percentMinor);
+  
+  for (int i = 0; i < N; i++) {
+    if (ages[i] < 16) {
+      printf("%s\n", names[i]);
+    }
+  }
   return 0;
 }
 
@@ -61,6 +86,58 @@ int main () {
 
 
 // _ _ _ _ _ //
+
+
+
+
+
+// 009 - Problema "soma_vetor"
+// Faça um programa que leia N números reais e armazene-os em um vetor. Em seguida: - Imprimir todos os elementos do vetor
+// - Mostrar na tela a soma e a média dos elementos do vetor
+
+// #include <stdio.h>
+
+// int main () {
+
+//   int N;
+//   double sum, average;
+
+//   printf("how manu numbers you will type?");
+//   scanf("%d", &N);
+
+//   double vet[N];
+
+//   for (int i = 0; i < N; i++ ) {
+//     printf("Type a number: ");
+//     scanf("%lf", &vet[i]);
+//   }
+
+//   printf("\n Valores: ");
+//   for (int i = 0; i < N; i++) {
+//     printf("%.1lf ", vet[i]);
+//   }
+//   printf("\n");
+
+//   sum = 0;
+//   for (int i = 0; i < N; i++) {
+//     sum = sum + vet[i];
+//   }
+//   printf("Sum is equal to = %.2lf\n", sum);
+
+//   average = sum / N;
+//   printf("Average = %.2lf\n", average);
+ 
+//   return 0;
+// }
+
+
+
+
+
+
+// // _ _ _ _ _ //
+
+
 
 
 
@@ -141,6 +218,8 @@ int main () {
 
 
 
+
+
 // 006 - Problema "tabuada"
 // Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10, conforme exemplo.
 
@@ -166,6 +245,9 @@ int main () {
 
 
 // _ _ _ _ _ _ //
+
+
+
 
 
 // 005 - Problema "media_idades"
@@ -204,6 +286,8 @@ int main () {
 
 
 
+
+
 // 004 Problema "crescente" (adaptado de URI 1113)
 // Leia uma quantidade indeterminada de duplas de valores inteiros X e Y. Escreva para cada X e Y uma mensagem que indique se estes valores foram digitados em ordem crescente ou decrescente. O programa deve finalizar quando forem digitados dois valores iguais.
 
@@ -235,6 +319,9 @@ int main () {
 
 
 // _ _ _ _ _ _ //
+
+
+
 
 
 // 003 - Problema "menor_de_tres"
@@ -272,6 +359,7 @@ int main () {
 
 
 // _ _ _ _ _ //
+
 
 
 
@@ -348,8 +436,8 @@ int main () {
 
 
 
-
 // _ _ _ _ _ __ //
+
 
 
 
@@ -390,8 +478,8 @@ int main () {
 
 
 
-
 // _ _ _ _ _ _ _ //
+
 
 
 
@@ -426,7 +514,9 @@ int main () {
 
 
 
+
 // _ _ _ _ _ _ __ //
+
 
 
 
@@ -461,12 +551,7 @@ int main () {
 
 
 
-
-
-
 // _ _ _ _Others studies _ _ __ //
-
-
 
 
 
@@ -509,9 +594,8 @@ int main () {
 
 
 
-
-
 // _ _ _ _ _ _ _ //
+
 
 
 
@@ -549,6 +633,7 @@ int main () {
 
 
 
+
 // #include <stdio.h>
 // #include <string.h>
 
@@ -579,11 +664,7 @@ int main () {
 
 
 
-
-
-
 // _ _ _ _ _ _ //
-
 
 
 
@@ -616,6 +697,7 @@ int main () {
 //   printf("Name = %s\n", name);
 //  return 0;
 // }
+
 
 
 
@@ -653,6 +735,7 @@ int main () {
 
 
 
+
 // #include <stdio.h>
 // #include <string.h>
 
@@ -675,6 +758,7 @@ int main () {
 
 
 // _ _ _ _ _ _ _ //
+
 
 
 
@@ -722,8 +806,8 @@ int main () {
 
 
 
-
 // _ _ _ _ _ _ //
+
 
 
 
@@ -766,12 +850,11 @@ int main () {
 
 
 
-
-
-
-
-
 // _ _ _ _ _ _ _ _ //
+
+
+
+
 
 // #include <stdio.h>
 // #include <string.h>
