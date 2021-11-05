@@ -1,3 +1,4 @@
+// General C input //
 // Tipo Placeholder de formatação
 // *int = (inteiro 16 bits) %d ou %i
 // long int = (inteiro 32 bits) %li
@@ -65,7 +66,6 @@ int main () {
   
   return 0;
 }
-
 
 
 
