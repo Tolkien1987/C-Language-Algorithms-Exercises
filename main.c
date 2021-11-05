@@ -16,35 +16,97 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
+// 007 - Problema "soma_impares" (adaptado de URI 1071)
+// Leia 2 valores inteiros X e Y (em qualquer ordem). A seguir, calcule e mostre a soma dos números impares entre eles.
 
-// 005 - Problema "media_idades"
-// Faça um programa para ler um número indeterminado de dados, contendo cada um, a idade de um indivíduo. O último dado, que não entrará nos cálculos, contém um valor de idade negativa. Calcular e imprimir a idade média deste grupo de indivíduos. Se for entrado um valor negativo na primeira vez, mostrar a mensagem "IMPOSSIVEL CALCULAR".
 
 #include <stdio.h>
 
 int main () {
 
-  int age, count, sum;
-  double average;
+  int x, y, sum, change, i;
 
-  printf("Type the ages: \n");
-  scanf("%d", &age);
-
-  sum = 0;
-  count = 0;
-  while (age >= 0) {
-    sum = sum + age;
-    count = count + 1;
-    scanf("%d", &age);
-  } if (count == 0) {
-    printf("Cannot calculate\n");
-  } else {
-    average = (double)sum / count;
-    printf("Average = %.2lf\n", average);
+  printf("Please, type the first number: ");
+  scanf("%d %d", &x, &y);
+  printf("Please, type the second number: ");
+  
+  if (x > y) {
+    change = x;
+    x = y;
+    y = change;
   }
-
+  sum = 0;
+  for (i = x+1; i < y; i++) {
+    if (i % 2 != 0) {
+      sum = sum + i;
+    }
+  }
+  printf("Sum is = %d\n", sum);
   return 0;
 }
+
+
+
+
+// _ _ _ _ _ //
+
+
+
+// 006 - Problema "tabuada"
+// Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10, conforme exemplo.
+
+
+// #include <stdio.h>
+
+// int main () {
+
+//   int N, i, result;
+
+//   printf("Please, type the number: ");
+//   scanf("%d", &N);
+
+//   for (i = 1; i <= 10; i++) {
+//     result = N * i;
+//     printf("%d x %d = %d\n", N, i, result);
+//   }
+
+//   return 0;
+// }
+
+
+
+
+// _ _ _ _ _ _ //
+
+
+// 005 - Problema "media_idades"
+// Faça um programa para ler um número indeterminado de dados, contendo cada um, a idade de um indivíduo. O último dado, que não entrará nos cálculos, contém um valor de idade negativa. Calcular e imprimir a idade média deste grupo de indivíduos. Se for entrado um valor negativo na primeira vez, mostrar a mensagem "IMPOSSIVEL CALCULAR".
+
+// #include <stdio.h>
+
+// int main () {
+
+//   int age, count, sum;
+//   double average;
+
+//   printf("Type the ages: \n");
+//   scanf("%d", &age);
+
+//   sum = 0;
+//   count = 0;
+//   while (age >= 0) {
+//     sum = sum + age;
+//     count = count + 1;
+//     scanf("%d", &age);
+//   } if (count == 0) {
+//     printf("Cannot calculate\n");
+//   } else {
+//     average = (double)sum / count;
+//     printf("Average = %.2lf\n", average);
+//   }
+
+//   return 0;
+// }
 
 
 
