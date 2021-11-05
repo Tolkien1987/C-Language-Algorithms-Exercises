@@ -16,12 +16,12 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
-// 010 - Problema "alturas"   [HARDER]
-// Fazer um programa para ler nome, idade e altura de N pessoas, conforme exemplo. Depois, mostrar na tela a altura média das pessoas, e mostrar também a porcentagem de pessoas com menos de 16 anos, bem como os nomes dessas pessoas caso houver.
-
+//  011 - Problema "soma_linhas"
+// Fazer um programa para ler dois números inteiros M e N (máximo = 10). Em seguida, ler uma matriz de M linhas e N colunas contendo números reais. Gerar um vetor de modo que cada elemento do vetor seja a soma dos elementos da linha correspondente da matriz. Mostrar o vetor gerado.
 
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 void clean_entry() {
     char c;
@@ -35,52 +35,107 @@ void read_text(char *buffer, int length) {
 
 int main () {
 
-  int N, minorN;
-  double sum, average, percentMinor;
+  int M, N;
 
-  printf ("how many people will be count?");
+  printf("How many lines? ");
+  scanf("%d", &M);
+  printf("How many columns? ");
   scanf("%d", &N);
 
-  char names [N][50]; // Criando vetor de N posicoes, e qty de texto de (50)
-  int ages [N];
-  double height [N];
+  double mat [M][N];
+  double vet [M];
 
-  for (int i = 0; i < N; i++) {
-    printf("Data from %da person :\n", i + 1);
-    printf("Name: ");
-    clean_entry();
-    read_text(names[i], 50);
-    printf("Age: ");
-    scanf("%d", &ages[i]);
-    printf("Height: ");
-    scanf("%lf", &height[i]);
-  }
+  for (int i = 0; i < M; i++) {
+    printf("Type the elements of %da. line: \n", i + 1);
+    for (int j = 0; j < N; j++) {
+      scanf("%lf", &mat[i][j]);
 
-  sum = 0;
-  for (int i = 0; i < N; i++) {
-    sum = sum + height[i];
-  }
-  average = sum / N;
-  printf("Average height: %.2lf\n", average);
-
-  minorN = 0;
-  for (int i = 0; i < N; i++) {
-    if (ages[i] < 16) {
-      minorN = minorN + 1;
     }
   }
-  percentMinor = minorN * 100.0 / N;
-  printf("Peoples with less than 16 years old: %.1lf %%\n", percentMinor);
+  for (int i = 0; i < M; i++) {
+    vet[i] = 0;
+    for (int j = 0; j < N; j++) {
+      vet[i] = vet[i] + mat[i][j];
+    }
+  }
+  printf("Vector is: \n");
+  for (int i = 0; i < 0; i++) {
+    printf("%.1lf\n", vet[i]);
+  }
   
-  for (int i = 0; i < N; i++) {
-    if (ages[i] < 16) {
-      printf("%s\n", names[i]);
-    }
-  }
   return 0;
 }
 
 
+
+
+// _ _ _ _ _ //
+
+
+
+// 010 - Problema "alturas"   [HARDER]
+// Fazer um programa para ler nome, idade e altura de N pessoas, conforme exemplo. Depois, mostrar na tela a altura média das pessoas, e mostrar também a porcentagem de pessoas com menos de 16 anos, bem como os nomes dessas pessoas caso houver.
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// void clean_entry() {
+//     char c;
+//     while ((c = getchar()) != '\n' && c != EOF) {}
+// }
+
+// void read_text(char *buffer, int length) {
+//     fgets(buffer, length, stdin);
+//     strtok(buffer, "\n");    
+// }
+
+// int main () {
+
+//   int N, minorN;
+//   double sum, average, percentMinor;
+
+//   printf ("how many people will be count?");
+//   scanf("%d", &N);
+
+//   char names [N][50]; // Criando vetor de N posicoes, e qty de texto de (50)
+//   int ages [N];
+//   double height [N];
+
+//   for (int i = 0; i < N; i++) {
+//     printf("Data from %da person :\n", i + 1);
+//     printf("Name: ");
+//     clean_entry();
+//     read_text(names[i], 50);
+//     printf("Age: ");
+//     scanf("%d", &ages[i]);
+//     printf("Height: ");
+//     scanf("%lf", &height[i]);
+//   }
+
+//   sum = 0;
+//   for (int i = 0; i < N; i++) {
+//     sum = sum + height[i];
+//   }
+//   average = sum / N;
+//   printf("Average height: %.2lf\n", average);
+
+//   minorN = 0;
+//   for (int i = 0; i < N; i++) {
+//     if (ages[i] < 16) {
+//       minorN = minorN + 1;
+//     }
+//   }
+//   percentMinor = minorN * 100.0 / N;
+//   printf("Peoples with less than 16 years old: %.1lf %%\n", percentMinor);
+  
+//   for (int i = 0; i < N; i++) {
+//     if (ages[i] < 16) {
+//       printf("%s\n", names[i]);
+//     }
+//   }
+//   return 0;
+// }
 
 
 
