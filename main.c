@@ -17,36 +17,73 @@
 
 
 
-// 003 - Problema "menor_de_tres"
-// Fazer um programa para ler três números inteiros. Em seguida, mostrar qual o menor dentre os três números lidos. 
-// Em caso de empate, mostrar apenas uma vez.
+// 004 Problema "crescente" (adaptado de URI 1113)
+// Leia uma quantidade indeterminada de duplas de valores inteiros X e Y. Escreva para cada X e Y uma mensagem que indique se estes valores foram digitados em ordem crescente ou decrescente. O programa deve finalizar quando forem digitados dois valores iguais.
+
+
 
 #include <stdio.h>
 
 int main () {
 
-    int a, b, c, lower;
+  int x, y;
 
-    printf("First value: ");
-    scanf("%d", &a);
-    printf("Second value: ");
-    scanf("%d", &b);
-    printf("Third value: ");
-    scanf("%d", &c);
+  printf("type two number: \n");
+  scanf("%d", &x);
+  scanf("%d", &y);
 
-
-    if (a < b && a < c) {
-        lower = a;
-    } else if (b < c) {
-        lower = b;
+  while (x != y) {
+    if (x < y) {
+      printf("Increase\n");
     } else {
-        lower = c;
+      printf("Decrease\n");
     }
+    printf("Type other two numbers: \n");
+    scanf("%d", &x);
+    scanf("%d", &y);
+  }
 
-    printf("Lower = %d\n", lower);
+    
 
-    return 0;
+  return 0;
 }
+
+
+
+
+// _ _ _ _ _ _ //
+
+
+// 003 - Problema "menor_de_tres"
+// Fazer um programa para ler três números inteiros. Em seguida, mostrar qual o menor dentre os três números lidos. 
+// Em caso de empate, mostrar apenas uma vez.
+
+// #include <stdio.h>
+
+// int main () {
+
+//     int a, b, c, lower;
+
+//     printf("First value: ");
+//     scanf("%d", &a);
+//     printf("Second value: ");
+//     scanf("%d", &b);
+//     printf("Third value: ");
+//     scanf("%d", &c);
+
+
+//     if (a < b && a < c) {
+//         lower = a;
+//     } else if (b < c) {
+//         lower = b;
+//     } else {
+//         lower = c;
+//     }
+
+//     printf("Lower = %d\n", lower);
+
+//     return 0;
+// }
 
 
 
