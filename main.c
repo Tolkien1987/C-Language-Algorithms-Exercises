@@ -16,34 +16,123 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
-// 007 - Problema "soma_impares" (adaptado de URI 1071)
-// Leia 2 valores inteiros X e Y (em qualquer ordem). A seguir, calcule e mostre a soma dos números impares entre eles.
-
+// 009 - Problema "soma_vetor"
+// Faça um programa que leia N números reais e armazene-os em um vetor. Em seguida: - Imprimir todos os elementos do vetor
+// - Mostrar na tela a soma e a média dos elementos do vetor
 
 #include <stdio.h>
 
 int main () {
 
-  int x, y, sum, change, i;
+  int N;
+  double sum, average;
 
-  printf("Please, type the first number: ");
-  scanf("%d %d", &x, &y);
-  printf("Please, type the second number: ");
-  
-  if (x > y) {
-    change = x;
-    x = y;
-    y = change;
+  printf("how manu numbers you will type?");
+  scanf("%d", &N);
+
+  double vet[N];
+
+  for (int i = 0; i < N; i++ ) {
+    printf("Type a number: ");
+    scanf("%lf", &vet[i]);
   }
+
+  printf("\n Valores: ");
+  for (int i = 0; i < N; i++) {
+    printf("%.1lf ", vet[i]);
+  }
+  printf("\n");
+
   sum = 0;
-  for (i = x+1; i < y; i++) {
-    if (i % 2 != 0) {
-      sum = sum + i;
-    }
+  for (int i = 0; i < N; i++) {
+    sum = sum + vet[i];
   }
-  printf("Sum is = %d\n", sum);
+  printf("Sum is equal to = %.2lf\n", sum);
+
+  average = sum / N;
+  printf("Average = %.2lf\n", average);
+ 
   return 0;
 }
+
+
+
+
+
+
+// _ _ _ _ _ //
+
+
+
+//  008 - Problema "negativos"
+//  Faça um programa que leia um número inteiro positivo N (máximo = 10) e depois N números inteiros e armazene-os em um vetor. Em seguida, mostrar na tela todos os números negativos lidos.
+
+
+// #include <stdio.h>
+
+// int main () {
+
+//   int N;
+//   printf("How many number will you type? ");
+//   scanf("%d", &N);
+
+//   int vet[N];
+
+//   for (int i = 0; i < N; i++) {
+//     printf("Type a number: ");
+//     scanf("%d", &vet[i]);
+//   }
+
+//   printf("\n Negative numbers: \n");
+//   for (int i = 0; i < N; i++) {
+//     if (vet[i] < 0) {
+//       printf("%d\n", vet[i]);
+//     }
+//   }
+//   return 0;
+// }
+
+
+
+
+
+
+// _ _ _ _ _ //
+
+
+
+
+
+
+
+// 007 - Problema "soma_impares" (adaptado de URI 1071)
+// Leia 2 valores inteiros X e Y (em qualquer ordem). A seguir, calcule e mostre a soma dos números impares entre eles.
+
+
+// #include <stdio.h>
+
+// int main () {
+
+//   int x, y, sum, change, i;
+
+//   printf("Please, type the first number: ");
+//   scanf("%d %d", &x, &y);
+//   printf("Please, type the second number: ");
+  
+//   if (x > y) {
+//     change = x;
+//     x = y;
+//     y = change;
+//   }
+//   sum = 0;
+//   for (i = x+1; i < y; i++) {
+//     if (i % 2 != 0) {
+//       sum = sum + i;
+//     }
+//   }
+//   printf("Sum is = %d\n", sum);
+//   return 0;
+// }
 
 
 
