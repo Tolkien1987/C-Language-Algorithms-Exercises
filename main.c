@@ -13,40 +13,72 @@
 
 // for = (início; condição; incremento) 
 
+
 // _ _ _ _ Exercises _ _ _ //
+
+
+// 005 - Problema "media_idades"
+// Faça um programa para ler um número indeterminado de dados, contendo cada um, a idade de um indivíduo. O último dado, que não entrará nos cálculos, contém um valor de idade negativa. Calcular e imprimir a idade média deste grupo de indivíduos. Se for entrado um valor negativo na primeira vez, mostrar a mensagem "IMPOSSIVEL CALCULAR".
+
+#include <stdio.h>
+
+int main () {
+
+  int age, count, sum;
+  double average;
+
+  printf("Type the ages: \n");
+  scanf("%d", &age);
+
+  sum = 0;
+  count = 0;
+  while (age >= 0) {
+    sum = sum + age;
+    count = count + 1;
+    scanf("%d", &age);
+  } if (count == 0) {
+    printf("Cannot calculate\n");
+  } else {
+    average = (double)sum / count;
+    printf("Average = %.2lf\n", average);
+  }
+
+  return 0;
+}
+
+
+
+
+// _ _ _ _ _ _ //
 
 
 
 // 004 Problema "crescente" (adaptado de URI 1113)
 // Leia uma quantidade indeterminada de duplas de valores inteiros X e Y. Escreva para cada X e Y uma mensagem que indique se estes valores foram digitados em ordem crescente ou decrescente. O programa deve finalizar quando forem digitados dois valores iguais.
 
+// #include <stdio.h>
 
+// int main () {
 
-#include <stdio.h>
+//   int x, y;
 
-int main () {
+//   printf("type two number: \n");
+//   scanf("%d", &x);
+//   scanf("%d", &y);
 
-  int x, y;
+//   while (x != y) {
+//     if (x < y) {
+//       printf("Increase\n");
+//     } else {
+//       printf("Decrease\n");
+//     }
+//     printf("Type other two numbers: \n");
+//     scanf("%d", &x);
+//     scanf("%d", &y);
+//   }
 
-  printf("type two number: \n");
-  scanf("%d", &x);
-  scanf("%d", &y);
-
-  while (x != y) {
-    if (x < y) {
-      printf("Increase\n");
-    } else {
-      printf("Decrease\n");
-    }
-    printf("Type other two numbers: \n");
-    scanf("%d", &x);
-    scanf("%d", &y);
-  }
-
-    
-
-  return 0;
-}
+//   return 0;
+// }
 
 
 
