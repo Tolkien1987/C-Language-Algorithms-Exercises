@@ -16,56 +16,67 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
-
-//  011 - Problema soma_linhas
-// Fazer um programa para ler dois números inteiros M e N (máximo = 10). Em seguida, ler uma matriz de M linhas e N colunas contendo números reais. Gerar um vetor de modo que cada elemento do vetor seja a soma dos elementos da linha correspondente da matriz. Mostrar o vetor gerado.
-
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
 
-void clean_entry() {
-    char c;
-    while ((c = getchar()) != '\n' && c != EOF) {}
-}
-
-void read_text(char *buffer, int length) {
-    fgets(buffer, length, stdin);
-    strtok(buffer, "\n");    
-}
-
 int main () {
 
-  int M, N;
-
-  printf("How many lines? ");
-  scanf("%d", &M);
-  printf("How many columns? ");
-  scanf("%d", &N);
-
-  double mat [M][N];
-  double vet [M];
-
-  for (int i = 0; i < M; i++) {
-    printf("Type the elements of %da. line: \n", i + 1);
-    for (int j = 0; j < N; j++) {
-      scanf("%lf", &mat[i][j]);
-
-    }
-  }
-  for (int i = 0; i < M; i++) {
-    vet[i] = 0;
-    for (int j = 0; j < N; j++) {
-      vet[i] = vet[i] + mat[i][j];
-    }
-  }
-  printf("Vector is: \n");
-  for (int i = 0; i < 0; i++) {
-    printf("%.1lf\n", vet[i]);
-  }
+  
   
   return 0;
 }
+
+
+//  011 - Problema soma_linhas
+// Fazer um programa para ler dois números inteiros M e N (máximo = 10). Em seguida, ler uma matriz de M linhas e N colunas contendo números reais. Gerar um vetor de modo que cada elemento do vetor seja a soma dos elementos da linha correspondente da matriz. Mostrar o vetor gerado.
+
+// #include <stdio.h>
+// #include <string.h>
+// #include <math.h>
+
+// void clean_entry() {
+//     char c;
+//     while ((c = getchar()) != '\n' && c != EOF) {}
+// }
+
+// void read_text(char *buffer, int length) {
+//     fgets(buffer, length, stdin);
+//     strtok(buffer, "\n");    
+// }
+
+// int main () {
+
+//   int M, N;
+
+//   printf("How many lines? ");
+//   scanf("%d", &M);
+//   printf("How many columns? ");
+//   scanf("%d", &N);
+
+//   double mat [M][N];
+//   double vet [M];
+
+//   for (int i = 0; i < M; i++) {
+//     printf("Type the elements of %da. line: \n", i + 1);
+//     for (int j = 0; j < N; j++) {
+//       scanf("%lf", &mat[i][j]);
+
+//     }
+//   }
+//   for (int i = 0; i < M; i++) {
+//     vet[i] = 0;
+//     for (int j = 0; j < N; j++) {
+//       vet[i] = vet[i] + mat[i][j];
+//     }
+//   }
+//   printf("Vector is: \n");
+//   for (int i = 0; i < 0; i++) {
+//     printf("%.1lf\n", vet[i]);
+//   }
+  
+//   return 0;
+// }
 
 
 
