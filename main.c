@@ -18,25 +18,57 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
 
 int main () {
 
-  int age;
-  printf("How old are you?\n");
-  scanf("%d", &age);
+  int value;
+  printf("Type a value from 1 to 4: ");
+  scanf("%d", &value);
 
-  if(age < 18) {
-    printf("Your under 18\n");
-  } else if (age > 18 && age < 60) {
-    printf("You are an adult. \n");
-  } else {
-    printf("You are a Sir/Maam \n ");
+  switch(value) {
+    case 1:
+      printf("Sunday\n");
+      break;
+    case 2:
+      printf("Monday\n");
+      break;
+    case 3:
+      printf("Tuesday\n");
+      break;
+    case 4:
+      printf("Wednesday\n");
+      break;
+    default:  
+    printf("Invalid\n");
   }
-  printf("Your age is %d\n", age);
-  
+
   return 0;
 }
+
+// _ _ _ _ _ //
+
+
+// #include <stdio.h>
+// #include <string.h>
+// #include <math.h>
+
+// int main () {
+
+//   int age;
+//   printf("How old are you?\n");
+//   scanf("%d", &age);
+
+//   if(age < 18) {
+//     printf("Your under 18\n");
+//   } else if (age > 18 && age < 60) {
+//     printf("You are an adult. \n");
+//   } else {
+//     printf("You are a Sir/Maam \n ");
+//   }
+//   printf("Your age is %d\n", age);
+  
+//   return 0;
+// }
 
 
 //  011 - Problema soma_linhas
