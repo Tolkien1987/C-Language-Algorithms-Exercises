@@ -22,7 +22,18 @@
 
 int main () {
 
-  
+  int age;
+  printf("How old are you?\n");
+  scanf("%d", &age);
+
+  if(age < 18) {
+    printf("Your under 18\n");
+  } else if (age > 18 && age < 60) {
+    printf("You are an adult. \n");
+  } else {
+    printf("You are a Sir/Maam \n ");
+  }
+  printf("Your age is %d\n", age);
   
   return 0;
 }
