@@ -16,34 +16,42 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
-#include <stdio.h>
-#include <string.h>
 
-int main () {
 
-  int value;
-  printf("Type a value from 1 to 4: ");
-  scanf("%d", &value);
 
-  switch(value) {
-    case 1:
-      printf("Sunday\n");
-      break;
-    case 2:
-      printf("Monday\n");
-      break;
-    case 3:
-      printf("Tuesday\n");
-      break;
-    case 4:
-      printf("Wednesday\n");
-      break;
-    default:  
-    printf("Invalid\n");
-  }
 
-  return 0;
-}
+// _ _ _ _ _ //
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main () {
+
+//   int value;
+//   printf("Type a value from 1 to 4: ");
+//   scanf("%d", &value);
+
+//   switch(value) {
+//     case 1:
+//       printf("Sunday\n");
+//       break;
+//     case 2:
+//       printf("Monday\n");
+//       break;
+//     case 3:
+//       printf("Tuesday\n");
+//       break;
+//     case 4:
+//       printf("Wednesday\n");
+//       break;
+//     default:  
+//     printf("Invalid\n");
+//   }
+
+//   return 0;
+// }
 
 // _ _ _ _ _ //
 
