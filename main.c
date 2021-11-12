@@ -16,7 +16,8 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
-// Faca um programa que receba e some 5 numeros inteiros ate que a entrada seja 0.
+// Faca um programa que receba e some 5 numeros inteiros e some ate que a entrada seja 0, mostrar some no final, usando "While".
+
 
 #include <stdio.h>
 #include <string.h>
@@ -26,18 +27,44 @@ int main () {
   int number;
   int sum = 0;
 
-  for (int i = 0; i < 5; i++) {
+  printf("Type a number: ");
+  scanf("%d", &number);
+
+  while (number != 0) {
+    sum = sum + number;
     printf("Type a number: ");
     scanf("%d", &number);
-    sum = sum + number;
   }
-  
-  printf("The sum is %d", sum);
 
+  printf("The sum is %d", sum);
 
   return 0;
 }
 
+// _ _ _ _ _ _ //
+
+// Faca um programa que receba e some 5 numeros inteiros ate que a entrada seja 0 usando "FOR".
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main () {
+
+//   int number;
+//   int sum = 0;
+
+//   for (int i = 0; i < 5; i++) {
+//     printf("Type a number: ");
+//     scanf("%d", &number);
+//     sum = sum + number;
+//   }
+
+//   printf("The sum is %d", sum);
+
+
+//   return 0;
+// }
 
 // _ _ _ _ _ //
 
