@@ -16,8 +16,27 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
+// Faca um programa que receba e some 5 numeros inteiros ate que a entrada seja 0.
+
+#include <stdio.h>
+#include <string.h>
+
+int main () {
+
+  int number;
+  int sum = 0;
+
+  for (int i = 0; i < 5; i++) {
+    printf("Type a number: ");
+    scanf("%d", &number);
+    sum = sum + number;
+  }
+  
+  printf("The sum is %d", sum);
 
 
+  return 0;
+}
 
 
 // _ _ _ _ _ //
