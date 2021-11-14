@@ -16,27 +16,41 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
-// Faca um programa que receba e some 5 numeros inteiros e some ate que a entrada seja 0, mostrar some no final, usando "Do While".
 
 #include <stdio.h>
 #include <string.h>
 
 int main () {
 
-  int number;
-  int sum = 0;
 
-  do {
-    sum = sum + number;
-      printf("Type a number: ");
-      scanf("%d", &number);
-  }
-  while(number !=0);
-
-  printf("The sum is: %d", sum);
 
   return 0;
 }
+
+// _ _ _ _ _ //
+
+
+// Faca um programa que receba e some 5 numeros inteiros e some ate que a entrada seja 0, mostrar some no final, usando "Do While".
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main () {
+
+//   int number;
+//   int sum = 0;
+
+//   do {
+//     sum = sum + number;
+//       printf("Type a number: ");
+//       scanf("%d", &number);
+//   }
+//   while(number !=0);
+
+//   printf("The sum is: %d", sum);
+
+//   return 0;
+// }
 
 // _ _ _ _ //
 
