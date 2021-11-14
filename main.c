@@ -22,7 +22,14 @@
 
 int main () {
 
+  int value = 0;
 
+  while (1) {
+    printf("Value is: %d\n", value);
+    printf("I am fucked up!");
+    printf("I broke up");
+    value = value + 1;
+  }
 
   return 0;
 }
