@@ -40,8 +40,8 @@ int main () {
   result = n1 * n2;
   printf("The multiplication is: %d\n", result);
   //division
-  result = n1 / n2;
-  printf("The result of the division is: %d\n", result);
+  result2 = n1 / n2;
+  printf("The result of the division is: %lf\n", result2);
   //average
   result2 = (n1 + n2) / 2.0;
   printf("The average is: %lf\n", result2);
