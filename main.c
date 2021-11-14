@@ -16,23 +16,43 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
-
 #include <stdio.h>
 #include <string.h>
 
 int main () {
 
-  int value = 0;
+  int boolean = 0;
 
-  while (1) {
-    printf("Value is: %d\n", value);
-    printf("I am fucked up!");
-    printf("I broke up");
-    value = value + 1;
+  if (boolean) {
+    printf("True");
+  }else{
+    printf("False");
   }
+
+
 
   return 0;
 }
+
+// _ _ _ _ _ _ _ //
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main () {
+
+//   int value = 0;
+
+//   while (1) {
+//     printf("Value is: %d\n", value);
+//     printf("I am fucked up!");
+//     printf("I broke up. Here's the loop of doom...");
+//     value = value + 1;
+//   }
+
+//   return 0;
+// }
 
 // _ _ _ _ _ //
 
