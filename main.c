@@ -16,47 +16,61 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
+//Vetores
+
 #include <stdio.h>
 #include <string.h>
 
 int main () {
+  
 
-  int n1, n2, result;
-  double result2;
 
-  printf("Type the number 1: ");
-  scanf("%d", &n1);
-
-  printf("Type the number 2: ");
-  scanf("%d", &n2);
-
-  //soma
-  result = n1 + n2;
-  printf("The result of the sum is : %d\n", result);
-  //subtração
-  result = n1 - n2;
-  printf("The result of the subtraction is : %d\n", result);
-  //multiplicação
-  result = n1 * n2;
-  printf("The multiplication is: %d\n", result);
-  //division
-  result2 = n1 / n2;
-  printf("The result of the division is: %lf\n", result2);
-  //average
-  result2 = (n1 + n2) / 2.0;
-  printf("The average is: %lf\n", result2);
-  //quadrado
-  result2 = n1 * n1;
-  printf("The square is: %lf\n", result2);
-  //modulo
-  if(n1 % 2 == 0) {
-    printf("%d is pair\n", n1);
-  }else{
-    printf("%d is an odd\n", n1);
-  }
 
   return 0;
 }
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main () {
+
+//   int n1, n2, result;
+//   double result2;
+
+//   printf("Type the number 1: ");
+//   scanf("%d", &n1);
+
+//   printf("Type the number 2: ");
+//   scanf("%d", &n2);
+
+//   //soma
+//   result = n1 + n2;
+//   printf("The result of the sum is : %d\n", result);
+//   //subtração
+//   result = n1 - n2;
+//   printf("The result of the subtraction is : %d\n", result);
+//   //multiplicação
+//   result = n1 * n2;
+//   printf("The multiplication is: %d\n", result);
+//   //division
+//   result2 = n1 / n2;
+//   printf("The result of the division is: %lf\n", result2);
+//   //average
+//   result2 = (n1 + n2) / 2.0;
+//   printf("The average is: %lf\n", result2);
+//   //quadrado
+//   result2 = n1 * n1;
+//   printf("The square is: %lf\n", result2);
+//   //modulo
+//   if(n1 % 2 == 0) {
+//     printf("%d is pair\n", n1);
+//   }else{
+//     printf("%d is an odd\n", n1);
+//   }
+
+//   return 0;
+// }
 
 
 // #include <stdio.h>
