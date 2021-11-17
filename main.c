@@ -16,18 +16,53 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
-//Vetores
+// _ _ _ Funções Estrutura _ _ _ //
+//1 tipo de retorno
+//2 nome
+//3 parametro de entrada
+//4 implementacao(opcional)
+//retorno (opcional)
 
 #include <stdio.h>
 #include <string.h>
 
 int main () {
-  
+
+  printf("This is a main function");
 
 
 
-  return 0;
+ return 0;
 }
+
+
+// _ _ _ _ _ _ //
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main () {
+
+//   int numbers[5];
+//   numbers[0] = 1;
+//   numbers[1] = 3;
+//   numbers[2] = 5;
+//   numbers[3] = 7;
+//   numbers[4] = 9;
+
+//   float values[5];
+//   for(int i = 0; i < 5; i++) {
+//     values[i] = (float)numbers[i] / (float)2;
+//   }
+
+//   for (int i = 4; i >= 0; i--) {
+//     printf("%.2f\n", values[i]);
+//   }
+
+
+
+//   return 0;
+// }
 
 
 // #include <stdio.h>
