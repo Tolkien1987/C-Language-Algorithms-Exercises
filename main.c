@@ -21,16 +21,24 @@
 //2 nome
 //3 parametro de entrada
 //4 implementacao(opcional)
-//retorno (opcional)
+//retorno (opcional) [void por exemplo, executa, mas nao tem retorno]
 
 #include <stdio.h>
 #include <string.h>
 
+void msg() {
+  printf("This is a function. being called!\n");
+}
+
+int sum(int n1, int n2) {
+  int result = n1 + n2;
+  return result;
+}
+
 int main () {
 
-  printf("This is a main function");
-
-
+  printf("Hello!\n");
+  msg();
 
  return 0;
 }
