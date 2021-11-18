@@ -22,7 +22,7 @@
 int main () {
 
   int n;
-  int* p; // ponteiro é u mvalro que aponta para um emdereço de memoria
+  int* p; // ponteiro é um valor que aponta para um endereço de memoria
 
   printf("Type a number: ");
   scanf("%d", &n);
