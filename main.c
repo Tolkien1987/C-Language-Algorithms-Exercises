@@ -1,4 +1,4 @@
-// General C input //
+// General C inputs //
 // Tipo Placeholder de formatação
 // *int = (inteiro 16 bits) %d ou %i
 // long int = (inteiro 32 bits) %li
@@ -16,6 +16,58 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
+#include <stdio.h>
+#include <string.h>
+
+int main () {
+
+  int n;
+  int* p; // ponteiro é u mvalro que aponta para um emdereço de memoria
+
+  printf("Type a number: ");
+  scanf("%d", &n);
+
+  p = &n;
+
+  printf("The number is %d\n", n);
+
+  printf("Memory address is %d\n", n);
+
+  printf("Pointer address: %p\n", p);
+
+  return 0;
+}
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// void increment(int value){
+//   printf("Before increment.\n");
+//   printf("The counter value is %d\n", value);
+
+//   printf("After increment.\n");
+//   value++;
+//   printf("The counter value is %d\n", value);
+// }
+
+// int main() {
+
+//   int counter = 10;
+
+//   printf("The counter is %d\n", counter);
+//   printf("The counter value is %d\n", counter);
+
+//   increment(counter);
+
+//   printf("After increment is %d\n", counter);
+//   printf("The counter value is %d\n", counter);
+
+
+//   return 0;
+// }
+
+
 // _ _ _ Funções Estrutura _ _ _ //
 //1 tipo de retorno
 //2 nome
@@ -23,25 +75,26 @@
 //4 implementacao(opcional)
 //retorno (opcional) [void por exemplo, executa, mas nao tem retorno]
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-void msg() {
-  printf("This is a function. being called!\n");
-}
+// void msg() {
+//   printf("This is a function. being called!\n");
+// }
 
-int sum(int n1, int n2) {
-  int result = n1 + n2;
-  return result;
-}
+// int sum(int n1, int n2) {
+//   int result = n1 + n2;
+//   return result;
+// }
 
-int main () {
+// int main () {
 
-  printf("Hello!\n");
-  msg();
-
- return 0;
-}
+//   printf("Hello!\n");
+//   msg();
+//   int retorno = sum( 4, 2);
+//   printf("Retorno = %d", retorno);
+//  return 0;
+// }
 
 
 // _ _ _ _ _ _ //
