@@ -17,13 +17,20 @@
 // _ _ _ _ Exercises _ _ _ //
 
 //Entrada e saida//
+//FILE == arquivo
 
 #include <stdio.h>
 #include <string.h>
 
 int main () {
 
-
+  FILE *arq;
+  //fopen - (nome-do-arquivo) e (forma-de-abertura-do-arquivo)
+  //w - abrir o arquivo para escrita ( se o arquivo ja existir, será sobreescrito)
+  //r - abrir o arquivo para leitura (não é possivel escrever ni arquivo)
+  //wa - abrir o arquivo para adição de conteudo (se ja existir, conteudo sera add)
+  //fclose(arq) - sempre que finalizar manipulacao de um arquivo, necessario após uso, fecha-lo
+  arq = fopen("arquivo.txt", "w"); 
 
 
 
