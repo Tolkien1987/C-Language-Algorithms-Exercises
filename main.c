@@ -16,27 +16,62 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
-#include <stdio.h>
-#include <string.h>
 
-int main () {
 
-  int n;
-  int* p; // ponteiro é um valor que aponta para um endereço de memoria
 
-  printf("Type a number: ");
-  scanf("%d", &n);
 
-  p = &n;
 
-  printf("The number is %d\n", n);
+// _ _ _ _ //
 
-  printf("Memory address is %d\n", n);
 
-  printf("Pointer address: %p\n", p);
+//Arrays e Ponteiros
 
-  return 0;
-}
+// #include <stdio.h>
+// #include <string.h>
+
+// int main () {
+
+//   int values[5]; // Vetor de 5 posições [0] [1] [2] [3] [4]
+
+//   for (int i = 0; i < 5; i++) {
+//     printf("Type the %d/5 value ", (i+1));
+//     scanf("%d", &values[i]);
+//   }
+
+//   printf("The values are: \n");
+//   for (int i = 0; i < 5; i++) {
+//     printf("%d\n", values[i]);
+//   }
+
+
+//   return 0;
+// }
+
+// _ _ _ _ //
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main () {
+
+//   int n;
+//   int* p; // ponteiro é um valor que aponta para um endereço de memoria
+
+//   printf("Type a number: ");
+//   scanf("%d", &n);
+
+//   p = &n;
+
+//   printf("The number is %d\n", n);
+
+//   printf("Memory address is %d\n", n);
+
+//   printf("Pointer address: %p\n", p);
+
+//   return 0;
+// }
 
 
 // #include <stdio.h>
