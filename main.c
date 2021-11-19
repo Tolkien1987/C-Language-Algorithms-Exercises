@@ -16,8 +16,19 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
+//Entrada e saida//
+
+#include <stdio.h>
+#include <string.h>
+
+int main () {
 
 
+
+
+
+  return 0;
+}
 
 
 
