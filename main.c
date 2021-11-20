@@ -23,28 +23,58 @@
 //wa - abrir o arquivo para adição de conteudo (se ja existir, conteudo sera add)
 //fclose(arq) - sempre que finalizar manipulacao de um arquivo, necessario após uso, fecha-lo
 
+//Escrita em arquivos!//
+
 #include <stdio.h>
-#include <string.h>
 
 int main() {
 
   FILE *arq;
-  int num, resultado, soma = 0;
-  arq = fopen("numbers.txt", "r");
+  char fruta[10];
+
+  arq = fopen("frutas.txt", "w"); //write - escrita
 
   if(arq){
-    while(!feof(arq)){
-      fscanf(arq, "%d", &num);
-      soma = soma + num;
+    printf("Informe uma fruta ou 0 para sair: \n");
+    fgets(fruta, 10, stdin); //stdin = standard input ou entrada padrão
+    while(fruta[0] != '0'){
+      fputs(fruta, arq);
+      fgets(fruta, 10, stdin);
     }
   }else{
-    printf("Arquivo não encontrado...");
+    printf("Não foi possível criar o arquivo!");
   }
-  printf("A soma dos números no arquivo é : %d\n", soma);
   fclose(arq);
 
   return 0;
 }
+
+// _ _ _ _ _ //
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+
+//   FILE *arq;
+//   int num, resultado, soma = 0;
+//   arq = fopen("numbers.txt", "r");
+
+//   if(arq){
+//     while(!feof(arq)){
+//       fscanf(arq, "%d", &num);
+//       soma = soma + num;
+//     }
+//   }else{
+//     printf("Arquivo não encontrado...");
+//   }
+//   printf("A soma dos números no arquivo é : %d\n", soma);
+//   fclose(arq);
+
+//   return 0;
+// }
 
 
 
