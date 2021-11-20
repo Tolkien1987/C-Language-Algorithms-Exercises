@@ -28,21 +28,32 @@
 
 int main() {
 
-  FILE *arq;
-  char c;
-
-  arq = fopen("arquivo.txt", "r");
-
-  if(arq){
-    while((c = getc(arq)) != EOF){ //EOF = End Of File
-      printf("%c", c);
-    }
-  }else {
-    printf("Não achei o arquivo!");
-  }
 
   return 0;
 }
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+
+//   FILE *arq;
+//   char c;
+
+//   arq = fopen("arquivo.txt", "r");
+
+//   if(arq){
+//     while((c = getc(arq)) != EOF){ //EOF = End Of File
+//       printf("%c", c);
+//     }
+//   }else{
+//     printf("Não achei o arquivo!");
+//   }
+
+//   return 0;
+// }
 
 
 // _ _ _ _ _ //
@@ -1380,6 +1391,50 @@ int main() {
 //   printf("HEIGHT = %.21f\n", height);
 //   printf("GENDER = %c\n", gender);
 //   printf("NAME = %s\n", name);
+
+//   return 0;
+// }
+
+
+// _ _ _ _ //
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+
+
+// double x = 2, y = -4 , z = 6;
+
+//   printf("Type the value of x: ");
+//   scanf("%lf", &x);
+//   printf("Type the value of y: ");
+//   scanf("%lf", &y);
+//   printf("Type the value of z: ");
+//   scanf("%lf", &z);
+
+//   if ( y > x) {
+//     x = y;
+//     z = x * 2;
+//     y = z + x;
+//   }else{
+//     z = x + y;
+//     y = y - z;
+//     x = z / 2;
+//   }
+
+//   if (y >= 2) {
+//       z = (x + 2);
+//   }
+
+//   x = y / z - 0.5;
+//   z = x + 1;
+//   y = y - z;
+
+//   printf("%lf New value of x: \n", x);
+//   printf("%lf New value of y: \n", y);
+//   printf("%lf New value of z: \n", z);
 
 //   return 0;
 // }
