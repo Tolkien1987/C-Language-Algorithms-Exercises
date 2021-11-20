@@ -4,9 +4,11 @@
 
 Repo for my learning from Udemy courses with C programming language on weekends
 
-You can find this course here: 
+You can find these courses here: 
 
-https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/
+https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/ 
+
+https://www.udemy.com/course/programacao-em-c-essencial/
 
 _ _ _ _ _ _ _ _ _ _
 
