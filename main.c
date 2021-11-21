@@ -16,50 +16,70 @@
 
 // _ _ _ _ Exercises _ _ _ //
 
-
 //fopen - (nome-do-arquivo) e (forma-de-abertura-do-arquivo)
 //w - abrir o arquivo para escrita ( se o arquivo ja existir, será sobreescrito)
 //r - abrir o arquivo para leitura (não é possivel escrever no arquivo)
 //wa - abrir o arquivo para adição de conteudo (se ja existir, conteudo sera add)
 //fclose(arq) - sempre que finalizar manipulacao de um arquivo, necessario após uso, fecha-lo
 
-// Structs (Estrutura) - Definindo tipos
+// Structs (Estrutura) - typedef
 
 #include <stdio.h>
 #include <string.h>
 
-struct st_aluno{
-  char matricula[10];
-  char nome[100];
-  char curso[50];
-  int ano_nascimento;
-};
+int main () {
 
-int main() {
+  typedef float nota;
 
-  struct st_aluno aluno1;
+  nota prova1 = 7.0;
+  nota prova2 = 6.0;
 
-  printf("Informe a matrícula do aluno: ");
-  fgets(aluno1.matricula, 10, stdin);
+  nota soma = prova1 + prova2;
 
-  printf("Informe o nome do aluno: ");
-  fgets(aluno1.nome, 100, stdin);
-
-  printf("Informe o curso do aluno: ");
-  fgets(aluno1.curso, 50, stdin);
-
-  printf("Informe o nascimento do aluno: ");
-  scanf("%d", &aluno1.ano_nascimento);
-
-  printf("=============== Dados do aluno ==============\n");
-  printf("Matrícula: %s\n", aluno1.matricula);
-  printf("Nome: %s\n", aluno1.nome);
-  printf("Curso: %s\n", aluno1.curso);
-  printf("Ano de nascimento: %d\n", aluno1.ano_nascimento);
-
+  printf("A soam das notas é: %f", soma);
 
   return 0;
 }
+
+// _ _ _ _ //
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// struct st_aluno{
+//   char matricula[10];
+//   char nome[100];
+//   char curso[50];
+//   int ano_nascimento;
+// };
+
+// int main() {
+
+//   struct st_aluno aluno1;
+
+//   printf("Informe a matrícula do aluno: ");
+//   fgets(aluno1.matricula, 10, stdin);
+
+//   printf("Informe o nome do aluno: ");
+//   fgets(aluno1.nome, 100, stdin);
+
+//   printf("Informe o curso do aluno: ");
+//   fgets(aluno1.curso, 50, stdin);
+
+//   printf("Informe o nascimento do aluno: ");
+//   scanf("%d", &aluno1.ano_nascimento);
+
+//   printf("=============== Dados do aluno ==============\n");
+//   printf("Matrícula: %s\n", aluno1.matricula);
+//   printf("Nome: %s\n", aluno1.nome);
+//   printf("Curso: %s\n", aluno1.curso);
+//   printf("Ano de nascimento: %d\n", aluno1.ano_nascimento);
+
+
+//   return 0;
+// }
 
 
 
