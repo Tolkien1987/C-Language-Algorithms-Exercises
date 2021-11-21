@@ -36,7 +36,7 @@ int main () {
 
   nota soma = prova1 + prova2;
 
-  printf("A soam das notas é: %f", soma);
+  printf("A soam das notas é: %.2f", soma);
 
   return 0;
 }
