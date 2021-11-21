@@ -23,31 +23,74 @@
 //wa - abrir o arquivo para adição de conteudo (se ja existir, conteudo sera add)
 //fclose(arq) - sempre que finalizar manipulacao de um arquivo, necessario após uso, fecha-lo
 
-//Escrita em arquivos!//
+// Structs (Estrutura) - Definindo tipos
 
 #include <stdio.h>
+#include <string.h>
+
+struct st_aluno{
+  char matricula[10];
+  char nome[100];
+  char curso[50];
+  int ano_nascimento;
+};
 
 int main() {
 
-  FILE *arq;
-  char fruta[10];
+  struct st_aluno aluno1;
 
-  arq = fopen("frutas.txt", "w"); //write - escrita
+  printf("Informe a matrícula do aluno: ");
+  fgets(aluno1.matricula, 10, stdin);
 
-  if(arq){
-    printf("Informe uma fruta ou 0 para sair: \n");
-    fgets(fruta, 10, stdin); //stdin = standard input ou entrada padrão
-    while(fruta[0] != '0'){
-      fputs(fruta, arq);
-      fgets(fruta, 10, stdin);
-    }
-  }else{
-    printf("Não foi possível criar o arquivo!");
-  }
-  fclose(arq);
+  printf("Informe o nome do aluno: ");
+  fgets(aluno1.nome, 100, stdin);
+
+  printf("Informe o curso do aluno: ");
+  fgets(aluno1.curso, 50, stdin);
+
+  printf("Informe o nascimento do aluno: ");
+  scanf("%d", &aluno1.ano_nascimento);
+
+  printf("=============== Dados do aluno ==============\n");
+  printf("Matrícula: %s\n", aluno1.matricula);
+  printf("Nome: %s\n", aluno1.nome);
+  printf("Curso: %s\n", aluno1.curso);
+  printf("Ano de nascimento: %d\n", aluno1.ano_nascimento);
+
 
   return 0;
 }
+
+
+
+// _ _ _ _ _ //
+
+
+//Escrita em arquivos!//
+
+// #include <stdio.h>
+
+// int main() {
+
+//   FILE *arq;
+//   char fruta[10];
+
+//   arq = fopen("frutas.txt", "a"); //write - escrita
+
+//   if(arq){
+//     printf("Informe uma fruta ou 0 para sair: \n");
+//     fgets(fruta, 10, stdin); //stdin = standard input ou entrada padrão
+//     while(fruta[0] != '0'){
+//       fputs(fruta, arq);
+//       fgets(fruta, 10, stdin);
+//     }
+//   }else{
+//     printf("Não foi possível criar o arquivo!");
+//   }
+//   fclose(arq);
+
+//   return 0;
+// }
 
 // _ _ _ _ _ //
 
