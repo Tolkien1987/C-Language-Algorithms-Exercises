@@ -441,8 +441,8 @@ int main () {
 // Faca um programa que receba e some 5 numeros inteiros e some ate que a entrada seja 0, mostrar some no final, usando "While".
 
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
 // int main () {
 
